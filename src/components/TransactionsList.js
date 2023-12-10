@@ -3,9 +3,8 @@ import Transaction from "./Transaction";
 
 function TransactionsList() {
   const [transactions, setTransactions] = useState([]);
-
+  
   useEffect(() => {
-    // Fetch data from the provided URL
     fetch("http://localhost:8001/transactions")
       .then((response) => response.json())
       .then((data) => setTransactions(data))
@@ -31,7 +30,7 @@ function TransactionsList() {
         </tr>
         {transactions.map((transaction) => (
           <Transaction
-            key={transaction.id} // Make sure each transaction has a unique identifier
+            key={transaction.id}
             date={transaction.date}
             description={transaction.description}
             category={transaction.category}

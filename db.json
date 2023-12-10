@@ -104,6 +104,20 @@
       "category": "Entertainment",
       "amount": "700",
       "id": 15
+    },
+    {
+      "date": "2023-12-10",
+      "description": "Medication",
+      "category": "Medical",
+      "amount": "2500",
+      "id": 16
+    },
+    {
+      "date": "2023-12-11",
+      "description": "iPhone",
+      "category": "Gift",
+      "amount": "150000",
+      "id": 17
     }
   ]
 }
